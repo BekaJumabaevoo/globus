@@ -3,8 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+
+
 const Navbar = () => {
+  
+
+
+  
   return (
+    
     <div className="header">
       <div className="container">
         <motion.span animate={{ scale: 1.2 }} transition={{ duration: 0.5 }}>
@@ -91,7 +98,23 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           СВЯЗАТЬСЯ С НАМИ
+       
         </motion.button>
+      
+        <div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="#">Главная</a></li>
+    <li><a class="menu__item" href="#">Проекты</a></li>
+    <li><a class="menu__item" href="#">Команда</a></li>
+    <li><a class="menu__item" href="#">Блог</a></li>
+    <li><a class="menu__item" href="#">Контакты</a></li>
+  </ul>
+</div>
+       
       </div>
     </div>
   );
