@@ -37,10 +37,7 @@
   margin: 7px 0px;
   text-align: center;
 }
-/* .li_nav .active:hover {
-  background-color:#e6a650;
-  color: #333439;
- } */
+
 .li_nav:first-child {
   height: 30px;
   position: relative;
@@ -92,9 +89,10 @@ li:first-child:hover .ul_nav_hover {
   color: #e6a650;
   background-color: #333439;
   height: 33px;
+  margin-right: 5%;
   border-radius: 5px;
   margin-top: -10px;
-  margin-left: 300px;
+
 }
 
 .nav_btn:hover {
@@ -107,9 +105,8 @@ li:first-child:hover .ul_nav_hover {
   opacity: 0;
 }
 .menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
-
+  display: flex; 
+  align-items: center; 
   top: 20px;
   left: 20px;
   width: 26px;
@@ -117,7 +114,7 @@ li:first-child:hover .ul_nav_hover {
   cursor: pointer;
   z-index: 1;
 }
-/* добавляем "гамбургер" */
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -248,7 +245,7 @@ li:first-child:hover .ul_nav_hover {
 
 @media screen and (max-width: 1200px) {
   .nav_btn{
-    margin-left: 60%;
+    margin-left: 70%;
   }
   .menu__box {
     width: 100%;
@@ -272,8 +269,26 @@ li:first-child:hover .ul_nav_hover {
     justify-content: space-evenly;
   }
 }
-
-@media screen and (max-width: 1160px) {
-
+@media screen and (max-width: 720){
+  .nav_btn{
+    margin-left: 40%;
+    min-width: 720px;
+  }
 }
+@media screen and (max-width: 490){
+  .nav_btn{
+    margin-left: 40%;
+
+  }
+  #menu__toggle{
+    display: none;
+  }
+}
+@media screen and (max-width: 360){
+  .nav_btn{
+    margin-right: -3%;
+  }
+}
+
+
 
