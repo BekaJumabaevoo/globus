@@ -44,7 +44,7 @@ const Footer = () => {
         </nav>
         <nav>
           <ul className={s.col__2}>
-            <h1 className="title">Информация</h1>
+            <h2>Информация</h2>
             <li>
               <p className={s.text}>Вакансии</p>
             </li>
@@ -83,6 +83,28 @@ const Footer = () => {
               <p className={s.text}>Контакты</p>
             </li>
           </ul>
+        </nav>
+
+        <nav>
+          <div className={s.col__4}>
+            <h1 className={s.title}>Свяжитесь с нами</h1>
+
+            <h2 className={s.gmail__address}>
+              email address
+              <Link className={s.gmail__link} href="/">
+                <a>info@europework.pro</a>  
+              </Link>
+            </h2>
+            <h2 className={s.adres__home}>
+              Адрес <br></br> Казахстан
+              <Link className={s.link__adres} href='/'>
+                <a>Алматы, улица Абиша Кекильбайулы, 34, бизнес-центр Capital Tower
+                5 этаж 507 офис</a>
+              </Link>
+            </h2>
+          
+            
+          </div>
         </nav>
       </div>
     </footer>
