@@ -15,9 +15,11 @@ const CartsL = () => {
       </div>
       <div>
 
-      <Link href="/vacansy">
-          <a className={s.text_btn}>ВСЕ ВАКАНСИИ</a>
-        </Link>
+        <div className={s.all_vakan}>
+          <Link href="/vacansy">
+            <a className={s.text_btn}>ВСЕ ВАКАНСИИ</a>
+          </Link>
+        </div>
       </div>
     </div>
   );

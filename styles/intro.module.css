@@ -9,6 +9,7 @@
 .content {
   padding-top: 50px;
   display: flex;
+  justify-content: space-between;
   background: #333439;
 }
 .intro_photo {
@@ -18,7 +19,10 @@
     no-repeat;
   background-size: cover;
   margin-left: 50%;
+  padding-bottom: 50px;
+
 }
+
 .intro_main_photo {
   position: relative;
 }
@@ -43,7 +47,6 @@
   border-radius: 18px;
 }
 .intro_title {
-  width: 740px;
   color: #fff;
   padding-top: 26px;
   font-weight: 800;
@@ -70,10 +73,19 @@
   background: #dcac6e;
 }
 
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 1260px) {
   .content{
     display: block;
+    text-align: center;
   }
   
+
+  .intro_photo2{
+    display: none;
+  }
+  .intro_photo3{
+    display: none;
+  }
+
 
 }

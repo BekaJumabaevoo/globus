@@ -22,7 +22,6 @@ const Intro = () => {
             <button className={s.intro_btn}>
               ПОСМОТРЕТЬ ВАКАНСИИ
             </button>
-
             <div className={s.intro_photo}>
 
             </div>

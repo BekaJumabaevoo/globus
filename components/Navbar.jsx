@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="header">
       <div className="container">
-        <motion.span animate={{ scale: 1.2 }} transition={{ duration: 0.5 }}>
+        <motion.span className="logo" animate={{ scale: 1.2 }} transition={{ duration: 0.5 }}>
           <Image
             className="li_after"
             src="/logo.jpg"
@@ -89,41 +89,41 @@ const Navbar = () => {
           className="nav_btn"
           animate={{ scale: 1.2 }}
           transition={{ duration: 0.5 }}
-        >
+          >
           СВЯЗАТЬСЯ С НАМИ
         </motion.button>
 
         <div className="hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
-          <label className="menu__btn" for="menu__toggle">
+          <label className="menu__btn" htmlFor="menu__toggle">
             <span></span>
           </label>
           <ul className="menu__box">
-            <li>
-              <a className="menu__item" href="#">
-                Главная
+            <Link href="vacansy">
+              <a className="menu__item">
+                Вакансии
               </a>
-            </li>
-            <li>
-              <a className="menu__item" href="#">
-                Проекты
+            </Link>
+            <Link href="compania">
+              <a className="menu__item">
+              О компании
               </a>
-            </li>
-            <li>
-              <a className="menu__item" href="#">
-                Команда
+            </Link>
+            <Link href="coment">
+              <a className="menu__item">
+                Отзывы
               </a>
-            </li>
-            <li>
-              <a className="menu__item" href="#">
+            </Link>
+            <Link href="/blog">
+              <a className="menu__item">
                 Блог
               </a>
-            </li>
-            <li>
-              <a className="menu__item" href="#">
+            </Link>
+            <Link href="/contact">
+              <a className="menu__item">
                 Контакты
               </a>
-            </li>
+            </Link>
           </ul>
         </div>
       </div>

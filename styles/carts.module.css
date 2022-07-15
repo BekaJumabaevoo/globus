@@ -66,6 +66,9 @@
   flex-wrap: wrap;
 }
 
+.all_vakan{
+  margin-top: 40px;
+}
 .text_btn{
   border: 1px solid #333439;
     background: transparent;
