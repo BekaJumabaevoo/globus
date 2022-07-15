@@ -4,10 +4,15 @@ import s from '../styles/intro.module.css'
 import { motion } from "framer-motion";
 
 const Intro = () => {
+
+ 
+
   return (
     <div className={s.main}>
       <div className={s.container}>
-        <div className={s.content}>
+        <motion.div className={s.content} initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.3}}>
           <motion.div className={s.intro_main}  animate={{ x: [-200, 0] }}
             transition={{ ease: "easeOut", duration: 3 }}>
 
@@ -40,7 +45,7 @@ const Intro = () => {
 
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

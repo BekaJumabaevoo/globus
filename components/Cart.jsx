@@ -4,11 +4,25 @@ import Image from 'next/image';
 import Icon1 from '../public/work.svg'
 import Icon2 from '../public/location.svg'
 import Icon3 from '../public/kalendar.svg'
+import { motion } from 'framer-motion';
 
 
 const Cart = () => {
+
+  const rightAnimation = {
+    hidden: {
+      x: -200,
+      opacity: 0,
+    },
+    visible: custom => ({
+      x: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.2 }, 
+    }),
+  }
+
   return (
-    <div className={s.cart}>
+    <motion.div variants={rightAnimation}  className={s.cart}>
       <Image
         src="/me.jpg"
         alt="Picture of the author"
@@ -60,8 +74,7 @@ const Cart = () => {
       </button>
 
 
-
-    </div>
+    </motion.div>
   );
 };
 

@@ -93,7 +93,7 @@ const Navbar = () => {
           СВЯЗАТЬСЯ С НАМИ
         </motion.button>
 
-        <div className="hamburger-menu">
+        <div className="hamburger-menu" >
           <input id="menu__toggle" type="checkbox" />
           <label className="menu__btn" htmlFor="menu__toggle">
             <span></span>

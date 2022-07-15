@@ -2,17 +2,36 @@ import React from 'react';
 import Cart from './Cart';
 import s from '../styles/carts.module.css'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const CartsL = () => {
+
+  const rightAnimation = {
+    hidden: {
+      x: 0,
+      opacity: 0,
+    },
+    visible: custom => ({
+      x: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.2 }, 
+    }),
+
+  }
+ 
   return (
-    <div className={s.container}>
-      <h2 className={s.title}>Актуальные предложения в Латвии</h2>
-      <div className={s.carts}>
+    <motion.div className={s.container} initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.1 }}>
+      <motion.h2 className={s.title} variants={rightAnimation}>Актуальные предложения в Латвии</motion.h2>
+      <motion.div  initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.2 }} className={s.carts}>
         <Cart />
         <Cart />
         <Cart />
         <Cart />
-      </div>
+      </motion.div>
       <div>
 
         <div className={s.all_vakan}>
@@ -21,7 +40,7 @@ const CartsL = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
