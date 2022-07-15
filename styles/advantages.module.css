@@ -6,11 +6,12 @@
 }
 .container {
   /* width: 1285px; */
-  width: 1290px;
+  max-width: 1290px;
   margin: 0 auto;
 }
 .advantages_block {
   list-style: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   display: flex;
@@ -40,4 +41,11 @@
 .advantages_title{
   font-size: 48px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1520px) {
+  .advantages_block{
+    flex-wrap: wrap;
+  }
+
 }

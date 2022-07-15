@@ -3,6 +3,7 @@
   background: #333439;
 }
   .container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,4 +89,7 @@ li:first-child:hover .ul_nav_hover{
   transition: 0.5s;
   background-color:#e6a650;
   color: #333439;
+}
+@media only screen and (max){
+  
 }

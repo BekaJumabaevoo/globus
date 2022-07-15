@@ -14,7 +14,7 @@ const Helpers = () => {
 
       <div className={s.help_desg}>
         <h1 className={s.title}>
-          Помогаем с трудоустройством за границей с 2015 годаF
+          Помогаем с трудоустройством за границей с 2015 года
         </h1>
         <div className={s.items}>
           <div className={s.line}></div>

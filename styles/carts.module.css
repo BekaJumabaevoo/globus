@@ -70,7 +70,7 @@
   border: 1px solid #333439;
     background: transparent;
     box-shadow: none;
-    
+
     color: #333439;
     border-radius: 6px;
     color: #333439;
@@ -80,4 +80,12 @@
     font-size: 14px;
     line-height: 18px;
     padding: 12px 28px;
+}
+@media only screen and (max-width: 900px) {
+  .carts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
 }
