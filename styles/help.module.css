@@ -1,0 +1,46 @@
+.help_content {
+  display: flex;
+  max-width: 1290px;
+  margin: 0 auto;
+  margin-top: 122px;
+}
+.help_photo {
+  background: url("https://europework.pro/wp-content/themes/europework/assets/img/home/about-img.webp")
+    no-repeat;
+  background-size: cover;
+  width: 497px;
+  height: 467px;
+  border-radius: 20px;
+  margin-right: 15px;
+  flex: 0 0 50%;
+}
+.help_desg {
+  max-width: 497px;
+  margin-left: 15px;
+  flex: 0 0 50%;
+}
+.title {
+  font-size: 38px;
+  line-height: 44px;
+}
+.items{
+  display: flex;
+}
+.line {
+  border-left: 8px solid #e6a650;
+  padding-left: 24px;
+  margin: 0 0 24px 48px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+.item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+.help_text {
+  font-size: 16px;
+  line-height: 22px;
+}
