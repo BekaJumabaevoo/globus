@@ -32,7 +32,7 @@ const Navbar = () => {
           >
             <Image
               className="li_after"
-              src="/logo.jpg"
+              src="/logo.png"
               alt="logo"
               width="68"
               height="68"

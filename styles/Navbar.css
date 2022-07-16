@@ -147,7 +147,7 @@ li:first-child:hover .ul_nav_hover {
   padding: 12px 24px;
   color: #333;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -210,7 +210,7 @@ li:first-child:hover .ul_nav_hover {
   display: block;
   color: #333;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   text-decoration: none;
 }

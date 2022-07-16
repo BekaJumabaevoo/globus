@@ -4,7 +4,6 @@
   margin-top: 50px;
 }
 .title {
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 42px;
   line-height: 48px;
@@ -90,5 +89,18 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+  .title{
+      font-size: 35px;
+  }
 
+}
+@media only screen and (max-width: 600px){
+  .title{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .title{
+    font-size: 23px;
+  }
 }

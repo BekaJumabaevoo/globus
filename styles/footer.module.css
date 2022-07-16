@@ -1,90 +1,102 @@
-.text {
-  color: #fff;
-  display: flex;
-}
-
 .footer {
-  background-color: #333439;
-  max-width: 100%;
+  background: #333439;
+  /* background-color: #162232; */
+  color: #fff;
+  width: 100%;
+}
+.content {
+  max-width: 1185px;
   margin: 0 auto;
 }
-
-.footer__container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.first_section {
+  flex: 10% 10% 40%;
+  max-width: 40%;
 }
 
-.col__1 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  list-style: none;
-}
-
-.footer__btn {
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: auto;
+.btn {
   background: #e6a650;
-  -webkit-box-shadow: 0px 9px 17px rgb(0 0 0 / 25%);
   box-shadow: 0px 9px 17px rgb(0 0 0 / 25%);
   border-radius: 6px;
   color: #333439;
   letter-spacing: 0.02em;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   padding: 15px 30px;
-  -webkit-transition: all linear 200ms;
-  -o-transition: all linear 200ms;
   transition: all linear 200ms;
-  font-family: "Ubuntu";
-  font-weight: 500;
 }
 
-.footer__btn:hover {
-  background: #fedf3a;
-  transition: 2s;
+.footer_subtitle {
+  width: auto;
+  max-width: 246px;
+  margin: 13px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  padding-bottom: 40px;
 }
-
-.logotypes {
+.footer_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 10px;
 }
-
-/* col-2 */
-
-.col__2 {
+.footer_list_item {
+  padding-right: 12px;
+  padding-top: 14px;
+}
+.second_section {
+  flex: 0 0 30%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+}
+.foter_title {
+  padding-top: 20px;
+  color: #fff;
+  padding-bottom: 24px;
+}
+.li{
+  font-size: 16px;
+  padding: 0 0 25px 0;
   list-style: none;
 }
+.han_krasavchik{
+  display:flex;
+}
+.adres_title{
+  color: rgb(171, 170, 170);
+}
+.akbar_krasavchik{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.han_krasavchik{
+  display:flex;
+  justify-content: space-around;
+}
+.mikki_nu_soz_jok{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1300px){
+  .akbar_krasavchik{
+    justify-content: space-around;
+  }
 
-.col__2 > h2 {
-  color: #fff;
-  margin-bottom: 50px;
 }
 
-/* col__3 */
-
-.col__3{
-    list-style: none;
-    padding-top: 30px;
-}
-
-
-/* col__4 */
-
-.col__3{
-    display: flex;
+@media only screen and (max-width: 460px){
+  .akbar_krasavchik{
+    align-items: center;
     flex-direction: column;
+  }
+  .han_krasavchik{
+    align-items: center;
+    flex-direction: column;
+  }
+
 }
