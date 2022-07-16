@@ -4,7 +4,7 @@ import s from '../styles/carts.module.css'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const CartsL = () => {
+const CartsL = ({id}) => {
 
   const rightAnimation = {
     hidden: {
@@ -22,7 +22,7 @@ const CartsL = () => {
   return (
     <motion.div className={s.container} initial="hidden"
     whileInView="visible"
-    viewport={{ amount: 0.1 }}>
+    viewport={{ amount: 0.1 }} id={id}>
       <motion.h2 className={s.title} variants={rightAnimation}>Актуальные предложения в Латвии</motion.h2>
       <motion.div  initial="hidden"
     whileInView="visible"

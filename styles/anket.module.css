@@ -1,0 +1,97 @@
+.anket_last {
+  margin-top: 50px;
+  width: 100%;
+  background: #333439;
+  padding-bottom: 77px;
+  padding-top: 116px;
+}
+
+.anket {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ankets_description {
+  width: 50%;
+  height: 630px;
+}
+
+.anket_title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 107%;
+  color: #fff;
+}
+.anket_desc {
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.anket_subTitle {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 107%;
+  color: #e6a650;
+}
+
+.anket_two {
+  width: 50%;
+}
+
+.anket_cart {
+  display: flex;
+  align-items: center;
+}
+
+.anket_cart1 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  list-style: none;
+}
+.anket_cart2 {
+  padding-left: 15px;
+
+  color: #fff;
+  font-size: 22px;
+  text-align: top;
+}
+@media screen and (max-width: 1200px) {
+  .anket {
+    display: block;
+  }
+  .ankets_description {
+    height: 400px;
+    margin: 0 auto;
+  }
+  .anket_two {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ankets_description {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .anket_two {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .anket_title {
+    font-size: 27px;
+  }
+  .ankets_description {
+    height: 300px;
+  }
+  .anket_subTitle {
+    font-size: 27px;
+  }
+}

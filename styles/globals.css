@@ -19,3 +19,35 @@ a {
 ::-webkit-scrollbar {
   display: none;
 }
+
+button{
+  cursor: pointer;
+}
+
+.form_content_active{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 0, 0, 0, 0.70 );
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 5;
+}
+
+.form_content {
+  display: none;
+}
+
+/* .bg2_active{
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, 0.70 );
+}
+
+.bg2{
+  display: none;
+} */

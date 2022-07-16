@@ -3,7 +3,7 @@
   display: flex;
 }
 
-#footer {
+.footer {
   background-color: #333439;
   max-width: 100%;
   margin: 0 auto;

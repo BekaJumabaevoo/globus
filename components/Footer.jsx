@@ -11,7 +11,7 @@ import instagram from "../public/instagram.svg";
 
 const Footer = () => {
   return (
-    <footer id={s.footer}>
+    <footer className={s.footer} id={'#footer'}>
       <div className={s.footer__container}>
         <nav>
           <ul className={s.col__1}>

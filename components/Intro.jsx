@@ -8,7 +8,7 @@ const Intro = () => {
  
 
   return (
-    <div className={s.main} id={'section1'}>
+    <div className={s.main}id={'#bla'}>
       <div className={s.container}>
         <motion.div className={s.content} initial="hidden"
     whileInView="visible"

@@ -27,6 +27,7 @@
   width: 681px;
 }
 .li_nav {
+  cursor: pointer;
   list-style-type: none;
   font-weight: 400;
   font-size: 14px;
@@ -137,24 +138,11 @@ li:first-child:hover .ul_nav_hover {
   content: "";
   top: 8px;
 }
-.menu__box {  
-  position: fixed;
-  visibility: hidden;
 
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #eceff1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  transition: 1s;
-}
+
 /* элементы меню */
 .menu__item {
+  cursor: pointer;
   display: block;
   padding: 12px 24px;
   color: #333;
@@ -175,8 +163,8 @@ li:first-child:hover .ul_nav_hover {
   display: flex; /* используем flex для центрирования содержимого */
   align-items: center; /* центрируем содержимое кнопки */
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 40px;
+  left: 40px;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -201,7 +189,7 @@ li:first-child:hover .ul_nav_hover {
   top: 8px;
 }
 /* контейнер меню */
-.menu__box {
+/* .menu__box {
   display:grid;
   text-align: center;
   align-items:center;
@@ -215,7 +203,8 @@ li:first-child:hover .ul_nav_hover {
   list-style: none;
   background-color: #eceff1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-}
+} */
+
 /* элементы меню */
 .menu__item {
   display: block;
@@ -226,26 +215,31 @@ li:first-child:hover .ul_nav_hover {
   text-decoration: none;
 }
 
-.menu__item:hover {
-  background-color: #cfd8dc;
-}
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
+/* #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
-}
+} */
 .hamburger-menu {
   display: none;
+
+}
+.menu_lox_kalys228{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  /* visibility: hidden; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 1200px) {
