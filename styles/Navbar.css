@@ -36,7 +36,7 @@
 
 .li_nav:hover {
   transition: 0.3s;
-  color: #e6a650;
+  color: #ff3535;
 }
 .li_nav .active {
   padding: 7px 0px;
@@ -90,9 +90,9 @@ li:first-child:hover .ul_nav_hover {
 }
 
 .nav_btn {
-  border: 0.6px solid #e6a650;
+  border: 0.6px solid #e65f50;
   width: 180px;
-  color: #e6a650;
+  color: #e65350;
   background-color: #333439;
   height: 33px;
   margin-right: 5%;
@@ -103,7 +103,7 @@ li:first-child:hover .ul_nav_hover {
 
 .nav_btn:hover {
   transition: 0.5s;
-  background-color: #e6a650;
+  background-color: #e65050;
   color: #333439;
 }
 

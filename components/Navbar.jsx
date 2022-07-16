@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 // import Link from "next/link";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 import Form from "./Form";
 const Navbar = () => {
   const [isActive, setActive] = useState(false);

@@ -72,16 +72,19 @@
   border: 1px solid #333439;
     background: transparent;
     box-shadow: none;
-
     color: #333439;
     border-radius: 6px;
-    color: #333439;
     letter-spacing: 0.02em;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     padding: 12px 28px;
+    transition: 0.3s;
+}
+.text_btn:hover{
+  background-color: #333439;
+  color: #fff;
 }
 @media only screen and (max-width: 900px) {
   .carts{
