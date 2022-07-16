@@ -22,9 +22,9 @@ const Navbar = () => {
             animate={{ scale: 1.2 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/">
-              <a>Вакансии</a>
-            </Link>
+            
+              <a href='#bla'>Вакансии</a>
+           
             <ul className="ul_nav_hover">
               <li className="li_nav active">
                 <Link href="/ok">
@@ -43,9 +43,9 @@ const Navbar = () => {
             animate={{ scale: 1.2 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/about">
-              <a>Стоимость услуг</a>
-            </Link>
+            
+              <a href="#section2">Стоимость услуг</a>
+           
           </motion.li>
           <motion.li
             className="li_nav"

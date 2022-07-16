@@ -30,7 +30,7 @@ const Helpers = () => {
   }
 
    return (
-    <motion.div className={s.help_content} initial="hidden"
+    <motion.div id={'#bla'} className={s.help_content} initial="hidden"
     whileInView="visible"
     viewport={{ amount: 0.3}}>
 
