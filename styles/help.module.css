@@ -126,3 +126,11 @@ line-height: 34px;
     font-size: 9px;
   } 
 }
+@media only screen and (max-width: 360px){
+
+  .help_photo {
+    width: 270px;
+    height: 257px;
+  }
+
+}

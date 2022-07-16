@@ -12,11 +12,11 @@ const Intro = () => {
             transition={{ ease: "easeOut", duration: 3 }}>
 
             <h1 className={s.intro_title}>
-              Найдите идеальное <br /> место работы в Европе <br /> с Europework.pro
+              Найдите идеальное <br /> место работы в Европе <br /> с Globus Consulting
             </h1>
 
             <p className={s.intro_desc}>
-              Помогаем с трудоустройством в Европе гражданам Казахстана, <br /> Туркменистана, Таджикистана, Узбекистана и Кыргызстана
+              Помогаем с трудоустройством в Европе гражданам Кыргызстана 
             </p>
 
             <button className={s.intro_btn}>

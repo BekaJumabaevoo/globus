@@ -10,7 +10,7 @@ const Navbar = () => {
         <motion.span className="logo" animate={{ scale: 1.2 }} transition={{ duration: 0.5 }}>
           <Image
             className="li_after"
-            src="/logo.jpg"
+            src="/logo.png"
             alt="logo"
             width="68"
             height="68"
