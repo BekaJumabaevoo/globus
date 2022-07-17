@@ -5,10 +5,30 @@ import Icon1 from '../public/work.svg'
 import Icon2 from '../public/location.svg'
 import Icon3 from '../public/kalendar.svg'
 import { motion } from 'framer-motion';
+import axios from 'axios';
+import { useEffect } from 'react';
+
+
 
 
 const Cart = () => {
+  
 
+
+  useEffect(() => {
+    function getGit(){
+  
+      axios.get('https://globusconsalting312.herokuapp.com/posts/api/v1/posts/?is_active=&tag=').then(res =>{
+        console.log(res.data)
+      })
+      .catch(err =>{
+        console.log(err)
+      });
+    }
+    getGit()
+  }, [])
+  
+    
   const rightAnimation = {
     hidden: {
       x: -200,
@@ -17,12 +37,12 @@ const Cart = () => {
     visible: custom => ({
       x: 0,
       opacity: 1,
-      transition: { delay: custom * 0.2 }, 
+      transition: { delay: custom * 0.2 },
     }),
   }
 
   return (
-    <motion.div variants={rightAnimation}  className={s.cart}>
+    <motion.div variants={rightAnimation} className={s.cart}>
       <Image
         src="/me.jpg"
         alt="Picture of the author"

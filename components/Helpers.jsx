@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import s from "../styles/help.module.css";
 import { motion } from "framer-motion";
 
+  const axios = require('axios');
+
 const Helpers = () => {
   const rightAnimation = {
     hidden: {
