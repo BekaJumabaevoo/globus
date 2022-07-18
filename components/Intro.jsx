@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
-    <div className={s.main}>
+    <div className={s.main} id={'#bla'}>
       <div className={s.container}>
         <div className={s.content}>
           <motion.div className={s.intro_main}  animate={{ x: [-200, 0] }}

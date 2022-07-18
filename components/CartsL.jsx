@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Cart from './Cart';
 import s from '../styles/carts.module.css'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import axios from 'axios';
+
 
 const CartsL = ({id}) => {
+  // const [cartData , setDataCart] = useState([])
 
+  // useEffect(()=>{
+  //   axios.get('https://7856-212-42-120-155.in.ngrok.io/api/v1/posts').then(res => {
+  //     console.log(res);
+  //   })
+  // }, [])
   const rightAnimation = {
     hidden: {
       x: 0,
